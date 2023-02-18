@@ -1,0 +1,55 @@
+[
+    {
+        "id": "1",
+        "question": "Which of the following are the advantages of React.js?",
+        "options": [
+            {"answer": "React.js can increase the application's performance with Virtual DOM.", 
+             "isCorrect": false },
+
+            {"answer": "React.js is easy to integrate with other frameworks such as Angular, BackboneJS since it is only a view library.", 
+             "isCorrect": false },
+            
+            {"answer": "React.js can render both on client and server side.", 
+             "isCorrect": false }, 
+
+            {"answer": "All the above", 
+             "isCorrect": true }
+        ]
+    },
+
+    {
+        "id": "2",
+        "question": "Which of the following is not a disadvantage of React.js?",
+        "options": [
+            {"answer": "React.js has only a view layer. We have put your code for Ajax requests, events and so on.", 
+             "isCorrect": false },
+
+            {"answer": "The library of React.js is pretty large.", 
+             "isCorrect": false },
+
+            {"answer": "The JSX in React.js makes code easy to read and write.", 
+             "isCorrect": true }, 
+
+            {"answer": "The learning curve can be steep in React.js.", 
+             "isCorrect": false }
+        ]        
+    },
+
+    {
+        "id": "3",
+        "question": "2 + 2 = ",
+        "options": [
+            {"answer": "It will be 5",
+             "isCorrect": false },
+
+            {"answer": "It could 3",
+             "isCorrect": false },
+
+            {"answer": "Maybe 1",
+             "isCorrect": false }, 
+
+            {"answer": "Fo Sho 4",
+             "isCorrect": true } 
+        ]
+    }
+]
