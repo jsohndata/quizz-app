@@ -37,19 +37,73 @@
 
     {
         "id": "3",
-        "question": "2 + 2 = ",
+        "question": "What of the following is used in React.js to increase performance?",
         "options": [
-            {"answer": "It will be 5",
+            {"answer": "Original DOM",
              "isCorrect": false },
 
-            {"answer": "It could 3",
-             "isCorrect": false },
+            {"answer": "Virtual DOM",
+             "isCorrect": true },
 
-            {"answer": "Maybe 1",
+            {"answer": "Both A and B.",
              "isCorrect": false }, 
 
-            {"answer": "Fo Sho 4",
+            {"answer": "None of the above.",
              "isCorrect": true } 
         ]
-    }
+    },
+
+    {
+        "id": "4",
+        "question": "What is the default port where webpack-server runs?",
+        "options": [
+            {"answer": "3000",
+             "isCorrect": true },
+
+            {"answer": "8080",
+             "isCorrect": false },
+
+            {"answer": "3030.",
+             "isCorrect": false }, 
+
+            {"answer": "6060",
+             "isCorrect": false } 
+        ]
+    },
+
+    {
+        "id": "5",
+        "question": "What are the two ways to handle data in React?",
+        "options": [
+            {"answer": "State & Props",
+             "isCorrect": true },
+
+            {"answer": "Services & Components",
+             "isCorrect": false },
+
+            {"answer": "State & Services",
+             "isCorrect": false }, 
+
+            {"answer": "State & Component",
+             "isCorrect": false } 
+        ]
+    },
+
+    {
+        "id": "6",
+        "question": "What is a state in React?",
+        "options": [
+            {"answer": "A permanent storage.",
+             "isCorrect": false },
+
+            {"answer": "Internal storage of the component.",
+             "isCorrect": true },
+
+            {"answer": "External storage of the component.",
+             "isCorrect": false }, 
+
+            {"answer": "None of the above.",
+             "isCorrect": false } 
+        ]
+    }     
 ]
