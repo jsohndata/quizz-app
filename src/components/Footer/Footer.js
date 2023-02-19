@@ -9,7 +9,7 @@ export default function Footer() {
             <Row className="justify-content-md-center">
                 <Col md={6}>
                     <a href={github} target="_blank" rel="noreferrer" >
-                        <img src="/images/logo-github.svg" alt="Github" />
+                        <img src="https://jsohndata.github.io/quiz-app/images/logo-github.svg" alt="Github" />
                         <p><small>See Code in Github</small></p>
                     </a>
                 </Col>
