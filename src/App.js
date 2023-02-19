@@ -1,4 +1,3 @@
-import "./components/Quiz"
 import './assets/App.css';
 import Quiz from "./components/Quiz";
 
