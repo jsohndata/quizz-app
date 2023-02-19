@@ -1,9 +1,4 @@
-export default function QuizCard (props) {
-    const quizData = props.quizData;
-    const questionId = props.questionId;
-    const handleAnswer = props.handleAnswer;
-    const quizLength = props.quizLength;
-    // console.table(quizData)
+export default function QuizCard ({quizData, questionId, handleAnswer,quizLength} ) {
 
     return (
         <section aria-label="Quiz">
