@@ -1,8 +1,9 @@
-export default function QuizCard (props) {
-    const quizData = props.quizData;
-    const questionId = props.questionId;
-    const handleAnswer = props.handleAnswer;
-    const quizLength = props.quizLength;
+import Row from "react-bootstrap/Row";
+import Col from "react-bootstrap/Col";
+import Card from "react-bootstrap/Card";
+
+
+export default function QuizCard ({quizData, questionId, handleAnswer,quizLength} ) {
     // console.table(quizData)
 
     return (
