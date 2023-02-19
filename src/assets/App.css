@@ -1,5 +1,6 @@
 .parent-container {
     width: 93%;
     margin: 0 auto;
-    padding: 0;
+    margin-top: 10vh;
+    padding: 0; 
 }
