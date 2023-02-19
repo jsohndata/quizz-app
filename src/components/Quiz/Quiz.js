@@ -20,7 +20,7 @@ export default function Quiz () {
 
         const newQuestionId = questionId + 1;   
         
-        handleBgChange('https://onlineimagetools.com/images/examples-onlineimagetools/color-grid.png');    
+        handleBgChange();    
 
                 
         if (newQuestionId < quizLength) {
