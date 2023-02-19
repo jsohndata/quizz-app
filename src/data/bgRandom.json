@@ -17,5 +17,11 @@
     {
         "id": 4,
         "image": "/images/bg-pexels-photo-3363556.jpg"
-    } 
+    },
+
+    {
+        "id": 5,
+        "image": "/images/pexels-photo-1202841.jpg"
+    }
+
 ]
