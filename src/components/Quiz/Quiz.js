@@ -20,8 +20,7 @@ export default function Quiz () {
 
         const newQuestionId = questionId + 1;   
         
-        handleBgChange();    
-
+        handleBgChange();
                 
         if (newQuestionId < quizLength) {
             setQuestionId(newQuestionId);

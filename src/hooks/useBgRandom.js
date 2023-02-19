@@ -6,13 +6,16 @@ export default function useBgRandom() {
 
   const randomKey = Math.floor( (Math.random() * bgData.length) );
   const randomBgImg = bgData[randomKey].image
-  console.table({randomKey, randomBgImg, bgImage})
 
-  const handleBgChange = () => setBgImage(`url(${randomBgImg})`);
+  const handleBgChange = () => {
+    return setBgImage(`url(${randomBgImg})`);
+  }
   
   useEffect(() => {
     document.body.style.backgroundImage = bgImage;
-  }, [bgImage]);
+    }, [bgImage]);
 
-  return handleBgChange ;
+  console.table({randomKey, randomBgImg, bgImage});
+
+  return handleBgChange;
 }
