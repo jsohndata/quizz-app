@@ -1,8 +1,8 @@
-import QuizResult from "./QuizResult.js"
-import QuizCard from "./QuizCard.js"
-import { useState } from "react"
-
-import quizData from "../../data/quiz.json"
+import QuizResult from "./QuizResult.js";
+import QuizCard from "./QuizCard.js";
+import { useState } from "react";
+import quizData from "../../data/quiz.json";
+import styles from "./quiz.module.css"
 
 export default function Quiz () {
     const[showResult, setShowResult] = useState(false);
@@ -14,12 +14,12 @@ export default function Quiz () {
         if (isCorrect === true) setScore(score + 1);
         console.log({score});
 
-        const newQuestionId = questionId + 1 
+        const newQuestionId = questionId + 1;
         
         if (newQuestionId < quizLength) {
-            setQuestionId(newQuestionId) 
+            setQuestionId(newQuestionId);
         } else { 
-            setShowResult(true) }
+            setShowResult(true); }
     }
 
     const handleReset = () => {
@@ -30,9 +30,7 @@ export default function Quiz () {
 
     return (
         <>
-        <h1>Header</h1>
-        {
-            (showResult)
+            {(showResult)
                 ? ( <QuizResult
                         score={score}
                         quizLength={quizLength}
@@ -41,8 +39,7 @@ export default function Quiz () {
                         quizData={quizData}
                         questionId={questionId}
                         quizLength={quizLength}
-                        handleAnswer={handleAnswer} /> )
-            }
+                        handleAnswer={handleAnswer} /> )}
         </>
     )
 }
