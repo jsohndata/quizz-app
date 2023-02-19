@@ -1,21 +1,28 @@
-import QuizResult from "./QuizResult.js";
-import QuizCard from "./QuizCard.js";
 import { useState } from "react";
+import { Container } from "react-bootstrap";
+import Row from "react-bootstrap/Row";
 import quizData from "../../data/quiz.json";
-import styles from "./quiz.module.css"
+import QuizCard from "./QuizCard.js";
+import QuizResult from "./QuizResult.js";
+import useBgRandom from "../../hooks/useBgRandom.js"
+import "./quiz.css"
 
 export default function Quiz () {
     const[showResult, setShowResult] = useState(false);
     const[questionId, setQuestionId] = useState(0);
     const[score, setScore] = useState(0);
     const quizLength = quizData.length;
+    const handleBgChange = useBgRandom();
 
     const handleAnswer = (isCorrect) => {
         if (isCorrect === true) setScore(score + 1);
         console.log({score});
 
-        const newQuestionId = questionId + 1;
+        const newQuestionId = questionId + 1;   
         
+        handleBgChange('https://onlineimagetools.com/images/examples-onlineimagetools/color-grid.png');    
+
+                
         if (newQuestionId < quizLength) {
             setQuestionId(newQuestionId);
         } else { 
@@ -29,7 +36,8 @@ export default function Quiz () {
     }
 
     return (
-        <>
+        <Container aria-label="Quiz">
+            <Row className="justify-content-md-center">
             {(showResult)
                 ? ( <QuizResult
                         score={score}
@@ -40,6 +48,7 @@ export default function Quiz () {
                         questionId={questionId}
                         quizLength={quizLength}
                         handleAnswer={handleAnswer} /> )}
-        </>
+            </Row>
+        </Container>        
     )
 }
