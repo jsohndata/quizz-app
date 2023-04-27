@@ -7,7 +7,7 @@ export default function useBgRandom() {
   const randomKey = Math.floor( (Math.random() * bgData.length) );
   const randomBgImg = bgData[randomKey].image
 
-  const handleBgChange = () => {
+  const useBgRandom = () => {
     return setBgImage(`url(${randomBgImg})`);
   }
   
@@ -15,7 +15,7 @@ export default function useBgRandom() {
     document.body.style.backgroundImage = bgImage;
     }, [bgImage]);
 
-  console.table({randomKey, randomBgImg, bgImage});
+  // console.table({randomKey, randomBgImg, bgImage});
 
-  return handleBgChange;
+  return useBgRandom;
 }
