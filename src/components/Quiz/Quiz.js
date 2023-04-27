@@ -16,20 +16,18 @@ export default function Quiz() {
 
   const quizLength = quizData.length;
 
-  const handleAnswer = (isCorrect) => {
-    if (isCorrect === true) setScore(score + 1);
-    console.log({ score });
+  const handleAnswer = isCorrect => {
+    if (isCorrect) setScore(score + 1);
+
+    // console.log({ score });
 
     const newQuestionId = questionId + 1;
+    (newQuestionId < quizLength) 
+      ? setQuestionId(newQuestionId)
+      : setShowResult(true);
 
-    handleBgChange();
-
-    if (newQuestionId < quizLength) {
-      setQuestionId(newQuestionId);
-    } else {
-      setShowResult(true);
-    }
-  };
+      handleBgChange();
+  }
 
   const handleReset = () => {
     setShowResult(false);
@@ -40,20 +38,17 @@ export default function Quiz() {
   return (
     <Container aria-label="Quiz">
       <Row className="justify-content-md-center">
-        {showResult ? (
-          <QuizResult
-            score={score}
-            quizLength={quizLength}
-            handleReset={handleReset}
-          />
-        ) : (
-          <QuizCard
-            quizData={quizData}
-            questionId={questionId}
-            quizLength={quizLength}
-            handleAnswer={handleAnswer}
-          />
-        )}
+        {showResult 
+          ? (<QuizResult
+              score={score}
+              quizLength={quizLength}
+              handleReset={handleReset} />) 
+          : (<QuizCard
+              quizData={quizData}
+              questionId={questionId}
+              quizLength={quizLength}
+              handleAnswer={handleAnswer} />)
+        }
       </Row>
     </Container>
   );
