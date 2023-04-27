@@ -1,8 +1,4 @@
-<<<<<<< HEAD
 import Col from "react-bootstrap/Col";
-=======
-export default function QuizCard ({quizData, questionId, handleAnswer,quizLength} ) {
->>>>>>> main
 
 export default function QuizCard({ quizData, questionId, handleAnswer, quizLength, }) {
   // console.table(quizData)

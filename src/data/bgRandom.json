@@ -1,31 +1,31 @@
 [
     {
         "id": 1,
-        "image": "https://jsohndata.github.io/quiz-app/images/bg-pexels-photo-1187974.webp"
+        "image": "https://jsohndata.github.io/quizz-app/images/bg-pexels-photo-1187974.webp"
     },
 
     {
         "id": 2,
-        "image": "https://jsohndata.github.io/quiz-app/images/bg-pexels-photo-3220850.webp"
+        "image": "https://jsohndata.github.io/quizz-app/images/bg-pexels-photo-3220850.webp"
     },   
 
     {
         "id": 3,
-        "image": "https://jsohndata.github.io/quiz-app/images/bg-pexels-photo-3363556.webp"
+        "image": "https://jsohndata.github.io/quizz-app/images/bg-pexels-photo-3363556.webp"
     },
 
     {
         "id": 4,
-        "image": "https://jsohndata.github.io/quiz-app/images/bg-pexels-photo-10924906.webp"
+        "image": "https://jsohndata.github.io/quizz-app/images/bg-pexels-photo-10924906.webp"
     },
 
     {
         "id": 5,
-        "image": "https://jsohndata.github.io/quiz-app/images/bg-pexels-photo-15041149.webp"
+        "image": "https://jsohndata.github.io/quizz-app/images/bg-pexels-photo-15041149.webp"
     },
 
     {
         "id": 6,
-        "image": "https://jsohndata.github.io/quiz-app/images/bg-pexels-photo-1202841.webp"
+        "image": "https://jsohndata.github.io/quizz-app/images/bg-pexels-photo-1202841.webp"
     }
 ]
