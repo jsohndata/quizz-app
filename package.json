@@ -1,7 +1,7 @@
 {
   "name": "quiz-app",
   "version": "0.1.0",
-  "homepage": "https://jsohndata.github.io/quiz-app",
+  "homepage": "https://jsohndata.github.io/quizz-app",
   "private": true,
   "dependencies": {
     "bootstrap": "^5.2.3",
